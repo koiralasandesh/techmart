@@ -57,10 +57,7 @@ public class databaseInterface {
             PreparedStatement updateQuantityQuery = conn.prepareStatement(updateQuantityQueryString);
             updateQuantityQuery.setString(2,productname);
             updateQuantityQuery.setInt(1,updateCount);
-
-
             int result = updateQuantityQuery.executeUpdate();
-
             return 0;
 
         } catch (Exception e) {
